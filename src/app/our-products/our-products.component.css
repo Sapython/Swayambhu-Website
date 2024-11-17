@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h2{
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 65px;
+    text-align: center;
+    color:goldenrod;
+}
+
+hr{
+    width:400px;
+    margin: 0 auto;
+    color:goldenrod;
+}
+
+.productsSection{
+    width:100vw;
+    height:100vh;
+    background-image: url("/assets/backgrounds/productsBackground.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.tab-button{
+    font-family: 'Julius Sans One', sans-serif;
+    background-color: transparent;
+    border: 2px solid goldenrod;
+    color:white;
+    border-radius: 30px;
+}
+.tabContainer{
+    width:100%;
+}
+
+.showcaseImageContainer{
+    width: 30%;
+    text-align: center;
+    vertical-align: center;
+}
+
+.showcaseImage{
+    width: 80%;
+}
+
+.aboutText{
+    width: 50%;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 1.5rem;
+    color:goldenrod;
+    height: 200px;
+    overflow-y: auto;
+    margin-left: 2em;
+}
+.uk-tab > *{
+    padding:10px 10px;
+    margin-top: 30px;
+    font-family: 'Julius Sans One', sans-serif;
+}
+.uk-tab > li >a{
+    font-size:25px;
+}
+.uk-tab > .uk-active > a{
+    border: 2px solid goldenrod;
+    color:white;
+    border-radius: 40px;
+}
+.uk-tab > * > a:focus, .uk-tab > * > a{
+    color:white;
+}
+.uk-tab > * > a:focus, .uk-tab > * > a:hover{
+    color:goldenrod;
+}
+.uk-tab::before{
+    border-bottom: none;
+}
+
+.productBodyContainer{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width:768px) {
+    h2 {
+        font-size: 35px;
+    }
+
+    hr {
+        width: 275px;
+    }
+
+    .uk-tab > li >a{
+        font-size: 15px;
+    }
+
+    .aboutText {
+        display: none;
+    }
+
+    .showcaseImageContainer{
+        width: 60%;
+        min-width: 275px;
+    }
+}

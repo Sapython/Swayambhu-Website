@@ -1,0 +1,24 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+#st_gdpr_iframe{
+    display:none !important;
+}
+.st-label .st-shares{
+    color:white !important;
+}
+body{
+    scroll-snap-type: y mandatory;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+body > *{
+    scroll-snap-align: start;
+}
+/* .uk-slidenav>svg{
+    width:200px;
+    height:400px;
+    opacity: 0.3;
+} */

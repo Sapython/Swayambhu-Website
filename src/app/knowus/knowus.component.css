@@ -1,0 +1,203 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: fantasy;
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #03090f;
+  overflow:auto;
+
+}
+body::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  background: linear-gradient(#da9e1c,#30bfa5);
+  transition: 0.5s;
+  clip-path: circle(190px at center);
+  z-index: 0;
+  margin-left: 17%;
+  overflow: auto;
+}
+body::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  background: linear-gradient(#2196f3,#e91e63);
+  clip-path: circle(24% at 25% 56%);
+  z-index: 0;
+  transition: 0.5s;
+  
+}
+.box{
+  z-index: 6;
+  font-size: 300px;
+}
+
+.box h2{
+  font-size: 50%;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: "Josefin Sans", sans-serif;
+  background: linear-gradient(to right,#f2f5f7 10%, #111111 50%, #f0f3f0 60%);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 1.5s linear infinite;
+  display: inline-block;
+  margin-left: 60%;
+  margin-bottom: 100%;
+  
+}
+@keyframes textclip {
+	to {
+		background-position: 200% center;
+	}
+}
+
+.container{
+  width: 641px;
+  height: 400px;
+  position: relative;
+  left: 0%;
+  justify-content: space-between;
+}
+.container:hover .card:nth-child(3){
+  left: 0%;
+}
+.container:hover .card:nth-child(2){
+  left: 0;
+}
+.container .card{
+  position: absolute;
+  top: calc(215% - 202%);
+  left: 55%;
+  min-width: 300px;
+  min-height: 340px;
+  background: rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+  border-radius: 17px;
+  transform: translateX(-50%) translateY(calc(50px * var(--i))) rotate(40deg) skew(-20deg, -10deg) scale(0.6);
+  box-shadow: 25px 25px 100px rgba(0, 0, 0, 0.2);
+  z-index: calc(-1 * var(--i));
+  transition: 0.5s;
+}
+
+.container:hover  .card{
+  position: absolute;
+  top: 50%;
+  left: -10%;
+  z-index: 1;
+  opacity: 1;
+  transform: translateX(calc(-50% + calc(350px * var(--i)))) translateY(-50%) rotate(0deg) skew(0deg,0deg) scale(1);
+  
+  
+}
+.container2{
+  position: relative;
+  width: 1000px;
+  height: 420px;
+  position: relative;
+  right: 59%;
+  z-index: 7;
+  top: 21%;
+  left: -61%;
+}
+.container2 .card2{
+  position: absolute;
+  top: calc(183% - 200%);
+  left: 40%;
+  min-width: 300px;
+  min-height: 340px;
+  background: rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+  border-radius: 17px;
+  transform: translateX(-50%) translateY(calc(50px * var(--j))) rotate(40deg) skew(-20deg, -10deg) scale(0.6);
+  box-shadow: 25px 25px 100px rgba(0, 0, 0, 0.2);
+  z-index: calc(-1 * var(--j));
+  transition: 0.5s;
+}
+.container2:hover .card2{
+  position: absolute;
+  top: 10%;
+  left: 100%;
+  z-index: 2;
+  opacity: 1;
+  transform: translateX(calc(-50% + calc(350px * var(--j)))) translateY(50%) rotate(0deg) skew(0deg,0deg) scale(1);
+  margin-left: 10%;
+  justify-content: space-evenly;
+  
+}
+.container2:hover .card2:nth-child(3){
+  margin-left: 70%;
+}
+.container2:hover .card2:nth-child(2){
+  margin-left: 40%;
+}
+.content{
+  padding: 20px;
+  text-align: center;
+  transition: 0.5s;
+  transform: translateY(100px);
+  opacity: 0;
+}
+.content:hover{
+  transform: translateY(0px);
+  opacity: 1;
+  z-index: 8;
+}
+
+.content h2{
+  position: absolute;
+  top: -30px;
+  right: 30px;
+  font-size: 8em;
+  color: rgba(255, 255, 255, 0.05);
+  pointer-events: none;
+
+}
+.content h3{
+  color: #fff;
+  font-size: 1.8em;
+  z-index: 1;
+}
+.coontent p{
+  font-size: 1em;
+  color: #fff;
+  font-weight: 300;
+
+}
+.content a{
+  position: relative;
+  display: inline-block;
+  padding: 8px 20px;
+  margin-top: 15px;
+  background: #fff;
+  color: #000;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+
+}
+
+

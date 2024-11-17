@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.ImageCard{
+    min-width: 200px;
+    height: fit-content;
+    background-color: #f3f3f32a;
+    border-radius: 70px;
+    border: 1px #85895e solid;
+    padding: 1em 2em;
+}
+
+h3 {
+    margin: 1em 0;
+}
+
+img{
+    width:auto;
+    border-radius: 70px;
+}
+
+@media screen and (max-width:1380px) and (min-width:1360px){
+    .ImageCard{ 
+        border-radius: 50px;
+    }
+    img{
+        border-radius: 30px;
+    }
+}

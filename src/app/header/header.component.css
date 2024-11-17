@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+header {
+  background-image: linear-gradient(120deg,#030F3A,#1f033a,#1b033a);
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100px;
+}
+
+a {
+  color: #fff;
+  font-family: 'Parisienne', cursive;
+  font-size: 2rem; /*proportional to logo's and ul's height*/
+}
+
+a:hover, a:focus, a:active {
+  text-decoration: none;
+  opacity: 0.7;
+}
+
+img {
+  height: 80px; /*proportional to font-size of the links and ul's height*/
+  border-radius: 100%;
+}
